@@ -21,34 +21,36 @@ namespace IF_automations_task
 
 
         string PrivatpersonamButton { get; set; } = @"(//a[@href=" + '\u0022' + "/" + "privatpersonam" + '\u0022' + "])[2]";
-        string acceptCookiesButton { get; set; } = @"//button[contains(text(),'Piekrītu')]";
-        string apdrosinasanaDropdownButton { get; set; } = @"//*[@class='if desktop-menu-item is-parent']";
-        string clickToCelojumiButton { get; set; } = @"(//li/a[contains(text(),'Ceļojumi')])[3]";
-        string pirktPolisiButton { get; set; } = @"(//span[@class='if white icon ui arrow-right'])[1]";
-        string sakumaDatumsSelector { get; set; } = @"(//input[@type='text' and @class='form-control hasDatepicker'])[1]";
-        string beiguDatumsSelector { get; set; } = @"//input[@type='text' and @class='form-control hasDatepicker' and @placeholder='Beigu datums']";
-        string celojumaTeritorija { get; set; } = @"//div[@ng-repeat='item in singleTripEffectiveAreas' and @class='destination btn btn-default selected' and @ng-click='selectEffectiveArea(item)']";
-        string turpinatButton { get; set; } = @"(//input[@type='button' and @data-title='Lai turpinātu, nepieciešams aizpildīt obligātos laukus' and @value='Turpināt'])[1]";
-        string dayCounterSelector { get; set; } = @"*//div[contains(text(),'4 diena/-s')]";
-        string berniFieldSelector { get; set; } = @"//div[@name='ageGroup0' and @ng-model='model.ageGroups[ageGroup.key]' and @ng-change='ageGroupChanged()' and @hk-model='' and @hk-positive-number='']/input[@type='number' and @ng-model='value' and @ng-click='selectText();']";
-        string pieaugisieFieldSelector { get; set; } = @"//div[@name='ageGroup3' and @ng-model='model.ageGroups[ageGroup.key]' and @ng-change='ageGroupChanged()' and @hk-model='' and @hk-positive-number='']/input[@type='number' and @ng-model='value' and @ng-click='selectText();']";
-        string aprekinatCenuButton { get; set; } = @"//input[@type='button' and @data-title='Lai turpinātu, nepieciešams aizpildīt obligātos laukus' and @class='hk-btn-step-proceed btn btn-primary' and @value='Aprēķināt cenu']";
-        string covidInfoForValidation { get; set; } = @"//a[@href='https://www.if.lv/privatpersonam/apdrosinasana/celojumu-apdrosinasana/celosana-covid-laika' and @target='_blank' and text()='Vairāk par ceļojumu apdrošināšanu Covid-19 laikā']";
-        string openDropDownMenu { get; set; } = @"(//div[@class='col-xs-12 col-sm-5 col-lg-4' ]//button[@ng-click='open()'])[1]";
-        string bagazaUnMantasField { get; set; } = @"(//div[@class='col-xs-12 col-sm-5 col-lg-4' ]//button[@ng-click='open()'])[2]";
-        string celojumaIzmainasField { get; set; } = @"(//button[@ng-click='open()' and @class='form-control' ][contains(text(),'€')])[3]";
-        string atbildibaUnJuridiskaPalidzibaSelector { get; set; } = @"//span[@name='liability']//span[@class='hk-check']";
-        string nelaimesGadijumiSelector { get; set; } = @"//span[@name='personalAccident']//span[@class='hk-check']";
-        string drosibaNomojotAutoSelector { get; set; } = @"//span[@name='carDeductible']//span[@class='hk-check']";
-        string paaugstinataRiskaAktivitateSelector { get; set; } = @"//span[@name='highRiskActivities']//span[@class='hk-check']";
+        string AcceptCookiesButton { get; set; } = @"//button[contains(text(),'Piekrītu')]";
+        string ApdrosinasanaDropdownButton { get; set; } = @"//*[@class='if desktop-menu-item is-parent']";
+        string ClickToCelojumiButton { get; set; } = @"(//li/a[contains(text(),'Ceļojumi')])[3]";
+        string PirktPolisiButton { get; set; } = @"(//span[@class='if white icon ui arrow-right'])[1]";
+        string SakumaDatumsSelector { get; set; } = @"(//input[@type='text' and @class='form-control hasDatepicker'])[1]";
+        string BeiguDatumsSelector { get; set; } = @"//input[@type='text' and @class='form-control hasDatepicker' and @placeholder='Beigu datums']";
+        string CelojumaTeritorija { get; set; } = @"//div[@ng-repeat='item in singleTripEffectiveAreas' and @class='destination btn btn-default selected' and @ng-click='selectEffectiveArea(item)']";
+        string TurpinatButton { get; set; } = @"(//input[@type='button' and @data-title='Lai turpinātu, nepieciešams aizpildīt obligātos laukus' and @value='Turpināt'])[1]";
+        string DayCounterSelector { get; set; } = @"*//div[contains(text(),'4 diena/-s')]";
+        string BerniFieldSelector { get; set; } = @"//div[@name='ageGroup0' and @ng-model='model.ageGroups[ageGroup.key]' and @ng-change='ageGroupChanged()' and @hk-model='' and @hk-positive-number='']/input[@type='number' and @ng-model='value' and @ng-click='selectText();']";
+        string PieaugisieFieldSelector { get; set; } = @"//div[@name='ageGroup3' and @ng-model='model.ageGroups[ageGroup.key]' and @ng-change='ageGroupChanged()' and @hk-model='' and @hk-positive-number='']/input[@type='number' and @ng-model='value' and @ng-click='selectText();']";
+        string AprekinatCenuButton { get; set; } = @"//input[@type='button' and @data-title='Lai turpinātu, nepieciešams aizpildīt obligātos laukus' and @class='hk-btn-step-proceed btn btn-primary' and @value='Aprēķināt cenu']";
+        string CovidInfoForValidation { get; set; } = @"//a[@href='https://www.if.lv/privatpersonam/apdrosinasana/celojumu-apdrosinasana/celosana-covid-laika' and @target='_blank' and text()='Vairāk par ceļojumu apdrošināšanu Covid-19 laikā']";
+        string OpenDropDownMenu { get; set; } = @"(//div[@class='col-xs-12 col-sm-5 col-lg-4' ]//button[@ng-click='open()'])[1]";
+        string BagazaUnMantasField { get; set; } = @"(//div[@class='col-xs-12 col-sm-5 col-lg-4' ]//button[@ng-click='open()'])[2]";
+        string CelojumaIzmainasField { get; set; } = @"(//button[@ng-click='open()' and @class='form-control' ][contains(text(),'€')])[3]";
+        string AtbildibaUnJuridiskaPalidzibaSelector { get; set; } = @"//span[@name='liability']//span[@class='hk-check']";
+        string NelaimesGadijumiSelector { get; set; } = @"//span[@name='personalAccident']//span[@class='hk-check']";
+        string DrosibaNomojotAutoSelector { get; set; } = @"//span[@name='carDeductible']//span[@class='hk-check']";
+        string PaaugstinataRiskaAktivitateSelector { get; set; } = @"//span[@name='highRiskActivities']//span[@class='hk-check']";
+        string LoadingPopUpMessageGatavojamPiedavajumu { get; set; } = @"//span[contains(text(),'Gatavojam piedāvājumu')]";
+        string LoadingPopUpMessageAprekinamCenu { get; set; } = @"//span[contains(text(),'Aprēķinām cenu')]";
+        string TotalPrice { get; set; } = @"//div[@class='hk-step-summary']";
 
 
         [Test, Order(1)]
         public void aceptCookies()
         {
-           // IWebElement element = driver.FindElement(By.XPath(acceptCookiesButton));
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(acceptCookiesButton))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(AcceptCookiesButton))).Click();
             driver.SwitchTo().DefaultContent();
         }
 
@@ -63,18 +65,19 @@ namespace IF_automations_task
         public void PressApdrosinasanaDropDown()
         {
             driver.Navigate().Refresh();
-            //driver.SwitchTo().ActiveElement();
-            IWebElement element = driver.FindElement(By.XPath(apdrosinasanaDropdownButton));
+            IWebElement element = driver.FindElement(By.XPath(ApdrosinasanaDropdownButton));
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(apdrosinasanaDropdownButton))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(ApdrosinasanaDropdownButton))).Click();
 
 
         }
+
+
         [Test, Order(4)]
        public void PressCelojumi()
         {
               var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-              wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(clickToCelojumiButton))).Click();
+              wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(ClickToCelojumiButton))).Click();
             Assert.AreEqual("Ceļojumu apdrošināšana internetā | If.lv", driver.Title); 
            
         }
@@ -83,7 +86,7 @@ namespace IF_automations_task
         {
             driver.SwitchTo().DefaultContent();
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(pirktPolisiButton))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(PirktPolisiButton))).Click();
 
             
 
@@ -93,10 +96,10 @@ namespace IF_automations_task
             DateTime endDay = nextDay.AddDays(3);
 
             //enter start day 
-                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(sakumaDatumsSelector))).SendKeys(nextDay.ToString("dd.MM.yyyy"));
-                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(beiguDatumsSelector))).Clear();
+                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(SakumaDatumsSelector))).SendKeys(nextDay.ToString("dd.MM.yyyy"));
+                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BeiguDatumsSelector))).Clear();
             //enter end day
-                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(beiguDatumsSelector))).SendKeys(endDay.ToString("dd.MM.yyyy"));
+                    wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BeiguDatumsSelector))).SendKeys(endDay.ToString("dd.MM.yyyy"));
 
             
                     Screenshot screenshot = (driver as ITakesScreenshot).GetScreenshot();
@@ -104,57 +107,63 @@ namespace IF_automations_task
 
             //Validation step - would be 4 days 
 
-            //4 diena/-s       
+     
             //Click to the Turpināt button
-            //wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(turpinatButton))).Click();
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(turpinatButton))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(TurpinatButton))).Click();
 
-            IWebElement el = driver.FindElement(By.XPath(dayCounterSelector));
+            IWebElement el = driver.FindElement(By.XPath(DayCounterSelector));
             string elTextValue = el.Text;
 
             Assert.AreEqual("4 diena/-s", elTextValue);            
         }
+
+
+
+
         [Test,Order(6)]
         public void CalculatePrice()
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(berniFieldSelector))).Clear();
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(berniFieldSelector))).SendKeys("2");
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BerniFieldSelector))).Clear();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BerniFieldSelector))).SendKeys("2");
 
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(pieaugisieFieldSelector))).Clear();
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(pieaugisieFieldSelector))).SendKeys("2");
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(PieaugisieFieldSelector))).Clear();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(PieaugisieFieldSelector))).SendKeys("2");
 
             Screenshot screenshot = (driver as ITakesScreenshot).GetScreenshot();
             screenshot.SaveAsFile("screenshotEnterPeopleCount.png", ScreenshotImageFormat.Png);
 
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(aprekinatCenuButton))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(AprekinatCenuButton))).Click();
 
             
             screenshot.SaveAsFile("screenshotEnterPeopleCoun2t.png", ScreenshotImageFormat.Png);
 
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(covidInfoForValidation)));
-            IWebElement element = driver.FindElement(By.XPath(covidInfoForValidation));
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(CovidInfoForValidation)));
+            IWebElement element = driver.FindElement(By.XPath(CovidInfoForValidation));
 
             Assert.AreEqual(true, element.Displayed);
         }
+
+
         [Test, Order(7)]
         public void SelectPoliseSegums()
         {
-
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             Actions actions = new Actions(driver);
-            //span[@ng-if="(hideMessage == false || hideMessage == undefined) && loadingMessageValue !== undefined"]
-            //enter data to Medicinska palidzība arrea
+           
 
 
+            //enter data to Medicinska palidzība 
             try
             {
-               
-                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(openDropDownMenu))).Click();
+
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(OpenDropDownMenu))).Click();
                 wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("300 000 €"))).Click();
             }
-            catch (Exception exc) {
-                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(openDropDownMenu)));
+            catch  {
+                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(OpenDropDownMenu)));
 
                 IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
                 js.ExecuteScript("arguments[0].scrollIntoView(true);", myElement);
@@ -164,31 +173,35 @@ namespace IF_automations_task
 
 
             }
-            //enter data to Bagāža un personīgās mantas errea
+
+
+            //enter data to Bagāža un personīgās mantas 
             try
             {
-                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(bagazaUnMantasField))).Click();
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BagazaUnMantasField))).Click();
                 wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("600 €"))).Click();
             }
-            catch (Exception exc1)
+            catch 
             {
-                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(bagazaUnMantasField)));
+                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(BagazaUnMantasField)));
 
                 IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
                 js.ExecuteScript("arguments[0].scrollIntoView(true);", myElement);
                 myElement.Click();
                 wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("600 €"))).Click();
             }
+
 
             //enter data to Ceļojuma izmaiņas
-            
             try
             {
-                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(celojumaIzmainasField))).Click();
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(CelojumaIzmainasField))).Click();
                 wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("Nevēlos"))).Click();
-            } catch (Exception Excep)
+            } catch
             {
-                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(celojumaIzmainasField)));
+                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(CelojumaIzmainasField)));
 
                 IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
                 js.ExecuteScript("arguments[0].scrollIntoView(true);", myElement);
@@ -197,33 +210,29 @@ namespace IF_automations_task
                 wait.Until(ExpectedConditions.ElementToBeClickable(By.LinkText("Nevēlos"))).Click();
             }
 
-            Thread.Sleep(2000);
 
-            //mark checkboxes
-            //click to the "Atbildība un juridiska palidzība"
-
-
-
-
+            //Mark checkboxes
+            //Click to the "Atbildība un juridiska palidzība"
             try
             {
-                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(atbildibaUnJuridiskaPalidzibaSelector))).Click();
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(AtbildibaUnJuridiskaPalidzibaSelector))).Click();
                 //add here assert
-            } catch(Exception e)
+            } catch
             {
-                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(atbildibaUnJuridiskaPalidzibaSelector)));
+                IWebElement myElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(AtbildibaUnJuridiskaPalidzibaSelector)));
 
                 IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
                 js.ExecuteScript("arguments[0].scrollIntoView(true);", myElement);
                 myElement.Click();
             }
 
-           // Thread.Sleep(5000);
 
             //check "Nelaimes gadījumi" 
             try
             {
-                IWebElement element = driver.FindElement(By.XPath(nelaimesGadijumiSelector));
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                IWebElement element = driver.FindElement(By.XPath(NelaimesGadijumiSelector));
                 if(element.Selected == false)
                 {
                     element.Click();
@@ -237,11 +246,12 @@ namespace IF_automations_task
                 Console.WriteLine(e + "catch - Nelaimes gadijumi - something went wrong");
             }
 
+
             //check  "Drošība nomājot auto"
-            //Thread.Sleep(5000);
             try
             {
-                IWebElement element = driver.FindElement(By.XPath(drosibaNomojotAutoSelector));
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                IWebElement element = driver.FindElement(By.XPath(DrosibaNomojotAutoSelector));
                 if (element.Selected == true)
                 {
                     element.Click();
@@ -256,11 +266,13 @@ namespace IF_automations_task
             catch (Exception err) {
                 Console.WriteLine(err + "catch - Drošība nomājot auto");
             }
-            //check "Paaugstinata riska aktivitates"
 
+
+            //check "Paaugstinata riska aktivitates"
             try
             {
-                IWebElement element = driver.FindElement(By.XPath(paaugstinataRiskaAktivitateSelector));
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(LoadingPopUpMessageAprekinamCenu)));
+                IWebElement element = driver.FindElement(By.XPath(PaaugstinataRiskaAktivitateSelector));
                 if (element.Selected == true)
                 {
                     element.Click();
@@ -275,11 +287,19 @@ namespace IF_automations_task
                 Console.WriteLine(err + " catch - Paaugstinata riska aktivitates");
             }
 
-            Thread.Sleep(1000);
+            //take price screenshot          
+            try
+            {
+                IWebElement priceElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(TotalPrice)));
+                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                js.ExecuteScript("arguments[0].scrollIntoView(true);", priceElement);
 
-            Screenshot screenshot = (driver as ITakesScreenshot).GetScreenshot();
-            screenshot.SaveAsFile("awdawd.png", ScreenshotImageFormat.Png);
-            Thread.Sleep(5000);
+                Screenshot screenshot = (driver as ITakesScreenshot).GetScreenshot();
+                screenshot.SaveAsFile("price-screenshot.png", ScreenshotImageFormat.Png);
+            } catch
+            {
+                Console.WriteLine("Screenshot err");
+            }          
         }
     }
 }
